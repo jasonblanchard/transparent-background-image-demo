@@ -1,0 +1,22 @@
+body {
+  font-family: 'Helvetica Neue', 'sans-serif';
+}
+
+.transparent-background {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.transparent-background::after {
+  content: "";
+  background: url('http://gowild.wwf.org.uk/wp-content/uploads/factfiles_lion_01.jpg');
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
